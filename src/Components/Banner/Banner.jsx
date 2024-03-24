@@ -7,7 +7,7 @@ const Banner = () => {
           I Grow By Helping People In Need
         </h2>
         <label className="input input-bordered w-[350px] flex items-center gap-2">
-          <input type="text" className="grow" placeholder="Search" />
+          <input type="text" className="grow z-50" placeholder="Search" />
           <button className="bg-red-500 text-white px-6 rounded-r-md py-3">
             Search
           </button>

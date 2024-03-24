@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Clean water for children",
+    "category": "Health",
+    "textColor": "#0052FF",
+    "cardBackground": "#aec7ff",
+    "image": "https://i.ibb.co/gwHqnyZ/d2.jpg",
+    "cardBg": "#d9e5ff",
+    "description": "Embark on an exciting mountain adventure filled with breathtaking views and adrenaline-pumping activities."
+  },
+  {
+    "id": 2,
+    "title": "Good education",
+    "category": "Education",
+    "textColor": "#FF444A",
+    "cardBackground": "#ffc4c5",
+    "cardBg": "#ffe3e4",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Indulge in a culinary journey exploring the finest flavors from around the world."
+  },
+  {
+    "id": 3,
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "textColor": "#0052FF",
+    "cardBackground": "#d4ecc2",
+    "cardBg": "#ebf6e2",
+    "image": "https://i.ibb.co/CHFSXzs/dd3.jpg",
+    "description": "Step back in time and marvel at the elegance and engineering of vintage automobiles."
+  },
+  {
+    "id": 4,
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "textColor": "#FF444A",
+    "cardBackground": "#ffc4c5",
+    "cardBg": "#feeae4",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Experience the fusion of technology and creativity through mesmerizing digital artworks."
+  },
+  {
+    "id": 5,
+    "title": "Better Food for Everyone ",
+    "category": "Food",
+    "textColor": "#FF444A",
+    "cardBackground": "#ffc4c5",
+    "cardBg": "#d9e5ff",
+    "image": "https://i.ibb.co/gwHqnyZ/d2.jpg",
+    "description": "Join the fitness challenge to push your limits and achieve your health goals."
+  },
+  {
+    "id": 6,
+    "title": " Used Clothing Drive",
+    "category": "Clothing",
+    "textColor": "#0052FF",
+    "cardBackground": "#d4ecc2",
+    "cardBg": "#ebf6e2",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Get ready for a euphoric experience with electrifying performances by top artists at the music festival."
+  },
+  {
+    "id": 7,
+    "title": "Good education",
+    "category": "Education",
+    "cardBackground": "#ffc4c5",
+    "textColor": "#FF444A",
+    "cardBg": "#ffe3e4",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Witness the latest trends and haute couture designs strut down the runway in a glamorous fashion show."
+  },
+  {
+    "id": 8,
+    "title": "Tech Innovation Summit",
+    "category": "Technology",
+    "textColor": "#0052FF",
+    "cardBackground": "#aec7ff",
+    "cardBg": "#d9e5ff",
+    "image": "https://i.ibb.co/CHFSXzs/dd3.jpg",
+    "description": "Explore groundbreaking innovations and disruptive technologies shaping the future at the tech innovation summit."
+  },
+  {
+    "id": 9,
+    "title": "Clean water for children",
+    "category": "Health",
+    "textColor": "#0052FF",
+    "cardBackground": "#aec7ff",
+    "cardBg": "#d9e5ff",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Capture stunning moments in nature on an exhilarating wildlife photography expedition."
+  },
+  {
+    "id": 10,
+    "title": "Good education",
+    "category": "Education",
+    "textColor": "#FF444A",
+    "cardBackground": "#ffc4c5",
+    "cardBg": "#ffe3e4",
+    "image": "https://i.ibb.co/gwHqnyZ/d2.jpg",
+    "description": "Engage in thought-provoking discussions and literary insights at the literary symposium."
+  },
+  {
+    "id": 11,
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "textColor": "#0052FF",
+    "cardBackground": "#d4ecc2",
+    "cardBg": "#ebf6e2",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Immerse yourself in a virtual world filled with thrilling adventures and immersive storytelling."
+  },
+  {
+    "id": 12,
+    "title": "Better Food for Everyone",
+    "textColor": "#FF444A",
+    "cardBackground": "#ffc4c5",
+    "category": "Food",
+    "cardBg": "#feeae4",
+    "image": "https://i.ibb.co/b3TBtvR/dd.jpg",
+    "description": "Learn practical tips and eco-friendly practices for sustainable living at the workshop."
+  }
+]
