@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root/Root";
 import Home from "../Pages/Home/Home";
 import CardDetails from "../Components/CardDetails/CardDetails";
+import Statistics from "../Components/Statistics/Statistics";
+import Donation from "../Components/Donation/Donation";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +15,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
         path: "/donation",
-        element: <div>Hello donation</div>,
+        element: <Donation />,
       },
       {
         path: "/cardDetails/:id",
