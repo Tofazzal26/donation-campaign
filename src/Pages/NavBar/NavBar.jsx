@@ -72,7 +72,11 @@ const NavBar = () => {
     <Navbar className="mx-auto max-w-7xl shadow-none py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div>
-          <img src="../../../public/images/Logo.png" alt="" />
+          <img
+            className="w-[200px]"
+            src="../../../public/images/Logo.png"
+            alt=""
+          />
         </div>
         <div className="hidden lg:block">
           <NavList />
