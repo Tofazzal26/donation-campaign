@@ -18,14 +18,16 @@ const Donation = () => {
           <DonationCard key={items.id} items={items} />
         ))}
       </div>
-      <div className="text-center mt-6">
-        <button
-          onClick={handleSeeAll}
-          className="bg-[#009444] px-6 py-3 font-semibold text-white rounded-md"
-        >
-          {!toggle ? "Show All" : "Show Less"}
-        </button>
-      </div>
+      {localData.length > 4 && (
+        <div className="text-center mt-6">
+          <button
+            onClick={handleSeeAll}
+            className="bg-[#009444] px-6 py-3 font-semibold text-white rounded-md"
+          >
+            {!toggle ? "Show All" : "Show Less"}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
