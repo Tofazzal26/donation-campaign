@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import useDonationData from "../../Hooks/useDonationData";
 import { useEffect, useState } from "react";
 import { getToLocalStorage } from "../../utils/SaveToLocalstorage/SaveToLocalStorage";
+import CustomeSpinner from "../CustomeSpinner/CustomeSpinner";
+import { Toaster } from "react-hot-toast";
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -15,6 +17,10 @@ const CardDetails = () => {
   }, [data, id]);
 
   const { title, description, image, price } = details || {};
+
+  if (loading) {
+    return <CustomeSpinner />;
+  }
 
   const handleDonate = () => {
     getToLocalStorage(details);
@@ -41,6 +47,7 @@ const CardDetails = () => {
           <p className="mt-6">{description}</p>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

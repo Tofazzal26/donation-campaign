@@ -1,4 +1,8 @@
-const Banner = ({ handleSearch, setValue }) => {
+const Banner = ({ value, handleSearch, setValue }) => {
+  const resetInput = () => {
+    setValue("");
+  };
+
   return (
     <div>
       <div className="h-[450px] flex relative flex-col justify-center items-center ">
@@ -10,11 +14,15 @@ const Banner = ({ handleSearch, setValue }) => {
           <input
             onChange={(e) => setValue(e.target.value)}
             type="text"
+            value={value}
             className="grow z-50"
             placeholder="Search"
           />
           <button
-            onClick={() => handleSearch()}
+            onClick={() => {
+              handleSearch();
+              resetInput();
+            }}
             className="bg-red-500 text-white px-6 z-50 cursor-pointer rounded-r-md py-3"
           >
             Search

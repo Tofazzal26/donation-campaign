@@ -1,7 +1,96 @@
+import useDonationData from "../../Hooks/useDonationData";
+import useLocalStorage from "../../Hooks/useLocalStorage";
+import {
+  PieChart,
+  Pie,
+  Sector,
+  Cell,
+  ResponsiveContainer,
+  Legend,
+  Tooltip,
+} from "recharts";
 const Statistics = () => {
+  const { localData } = useLocalStorage();
+  const { data } = useDonationData();
+
+  const datas = [
+    { name: "Your Donation", value: localData.length },
+    { name: "Available Donation", value: data.length - localData.length },
+  ];
+  const COLORS = ["#ff444a", "#00c49f"];
+
+  const RADIAN = Math.PI / 180;
+  const renderCustomizedLabel = ({
+    cx,
+    cy,
+    midAngle,
+    innerRadius,
+    outerRadius,
+    percent,
+  }) => {
+    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+    const x = cx + radius * Math.cos(-midAngle * RADIAN);
+    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+    return (
+      <text
+        x={x}
+        y={y}
+        fill="white"
+        textAnchor={x > cx ? "start" : "end"}
+        dominantBaseline="central"
+      >
+        {`${(percent * 100).toFixed(2)}%`}
+      </text>
+    );
+  };
+
+  const CustomTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div
+          className="custom-tooltip"
+          style={{
+            backgroundColor: "#ffff",
+            border: "1px solid #aaa",
+            padding: "5px",
+            fontSize: "18px",
+            fontWeight: "800",
+          }}
+        >
+          <p className="label">{`${payload[0].name} : ${payload[0].value}`}</p>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   return (
-    <div>
-      <h1>This is a Statistics</h1>
+    <div style={{ width: "100%", height: "80vh" }}>
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie
+            data={datas}
+            cx="50%"
+            cy="50%"
+            labelLine={false}
+            label={renderCustomizedLabel}
+            outerRadius={200}
+            fill="#8884d8"
+            dataKey="value"
+          >
+            {datas.map((entry, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
+            ))}
+          </Pie>
+          <Tooltip content={<CustomTooltip />} />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 };

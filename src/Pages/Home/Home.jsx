@@ -25,8 +25,8 @@ const Home = () => {
 
   return (
     <div>
-      <Banner handleSearch={handleSearch} setValue={setValue} />
-      <CategoryList filtered={filtered} />
+      <Banner value={value} handleSearch={handleSearch} setValue={setValue} />
+      <CategoryList loading={loading} filtered={filtered} />
     </div>
   );
 };

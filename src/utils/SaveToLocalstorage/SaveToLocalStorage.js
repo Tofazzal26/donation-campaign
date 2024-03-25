@@ -1,3 +1,5 @@
+import { Toaster, toast } from "react-hot-toast";
+
 export const getStored = () => {
   const AlreadyStored = localStorage.getItem("donation");
   if (AlreadyStored) {
@@ -12,8 +14,8 @@ export const getToLocalStorage = (id) => {
   if (!isExisted) {
     stored.push(id);
     localStorage.setItem("donation", JSON.stringify(stored));
-    alert("Added to local storage");
+    toast.success("Add Successfully");
   } else {
-    alert("Already Added");
+    toast.error("Already Added!");
   }
 };
